@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+    BRAND NAME: the live name comes from SITE_CONFIG at the top of script.js.
+    The "Hidden Hand" text in this file is only the no-JavaScript fallback.
+    See README.md for how to change it everywhere in one go.
+  -->
+  <title>Hidden Hand – The hidden hand behind your admin.</title>
+  <meta name="description" content="Hidden Hand follows up your quotes, chases unpaid invoices, asks happy customers for reviews and replies to after-hours emails for you, in wording you've approved, from your own Gmail inbox.">
+  <meta name="theme-color" content="#111111">
+  <!-- Brand icons: assets/brand/ (sources: /workspace/hiddenhand-logo/v2/src). The 16px PNG is pixel-hinted. -->
+  <link rel="icon" href="assets/brand/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+  <link rel="mask-icon" href="assets/brand/mask-icon.svg" color="#111111">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Social share. og:image should become an absolute URL once a domain is live. -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hidden Hand – The hidden hand behind your admin.">
+  <meta property="og:description" content="Quote follow-ups, invoice reminders, review requests and after-hours replies, sent from your own Gmail in wording you've approved.">
+  <meta property="og:image" content="assets/brand/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Hidden Hand Admin logo: a geometric hand with a red text cursor between two fingers, on black">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/brand/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- LOGO: SVG lockup (mark + HIDDENHAND ADMIN, text outlined). Below 768px only the mark shows. Files: assets/brand/ -->
+      <a class="wordmark brand-logo" href="#top" data-brand-aria="{brand} home" aria-label="Hidden Hand home">
+        <img class="brand-lockup" src="assets/brand/hh-lockup-on-light.svg" width="232" height="36" alt="">
+        <img class="brand-mark-only" src="assets/brand/hh-mark-on-light.svg" width="40" height="40" alt="">
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#services">What it does</a></li>
+          <li><a href="#control">You're in charge</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#book" data-booking>Book a setup call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Email admin for small businesses on Gmail</p>
+          <h1 id="hero-title"><span class="h-light">The hidden</span> hand behind your admin.</h1>
+          <p class="subline">Nothing goes out in words you haven't OK'd.</p>
+          <p class="lede"><span data-brand>Hidden Hand</span> follows up your quotes, chases unpaid invoices, asks happy customers for reviews and replies to after-hours emails for you. You approve the wording once, and it sends in your voice from your own inbox. Anything that needs a real answer comes to you first.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#book" data-booking>Book a setup call</a>
+            <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+          </div>
+          <ul class="assure" aria-label="What you control">
+            <li>You approve every template</li>
+            <li>Real questions come to you first</li>
+            <li>Pause any time</li>
+            <li>STOP opt-out on every email</li>
+            <li>Daily or weekly digest</li>
+          </ul>
+          <p class="hero-note">For trades, cleaners, salons, clinics, consultants and other small teams (1–5 people) who run their business from Gmail.</p>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Example inbox: a quote follow-up, an invoice reminder and a review request have been sent from approved templates, while a customer's question about pricing is waiting for the owner.">
+          <div class="inbox-card" aria-hidden="true">
+            <div class="inbox-head">
+              <span class="inbox-dots"><i></i><i></i><i></i></span>
+              <span class="inbox-title">Your inbox · today</span>
+            </div>
+            <ul class="inbox-list">
+              <li>
+                <span class="avatar av-1">PS</span>
+                <span class="inbox-text"><strong>Quote follow-up</strong><small>To Priya S. · Re: Your quote</small></span>
+                <span class="pill pill-sent">Sent</span>
+              </li>
+              <li>
+                <span class="avatar av-2">MK</span>
+                <span class="inbox-text"><strong>Invoice reminder</strong><small>To Mark K. · Invoice #1042</small></span>
+                <span class="pill pill-sent">Sent</span>
+              </li>
+              <li>
+                <span class="avatar av-3">TW</span>
+                <span class="inbox-text"><strong>Review request</strong><small>To Tom W. · Thanks for choosing us</small></span>
+                <span class="pill pill-sent">Sent</span>
+              </li>
+              <li class="is-flagged">
+                <span class="avatar av-4">JL</span>
+                <span class="inbox-text"><strong>Question about pricing</strong><small>From Jess L. · Needs your answer</small></span>
+                <span class="pill pill-you">For you</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="template-card" aria-hidden="true">
+            <div class="template-head">
+              <span class="template-label">Template · Quote follow-up</span>
+              <span class="pill pill-approved">
+                <svg viewBox="0 0 20 20" focusable="false"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Approved by you
+              </span>
+            </div>
+            <p>Hi <mark>{first name}</mark>, just checking in on the quote I sent through. Happy to answer any questions.</p>
+            <p class="template-sign">Thanks, <mark>{your name}</mark></p>
+            <p class="template-stop">Reply STOP and I won't follow up again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What it does</p>
+          <h2 id="services-title">Five kinds of email, off your plate</h2>
+          <p>The important-but-easy-to-forget emails that slip when you're busy looking after customers.</p>
+        </div>
+
+        <ul class="card-grid">
+          <li class="card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 10h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Quote follow-ups</h3>
+            <p>Up to three friendly check-ins on quotes that haven't been accepted: after 24 hours, 3 days and 7 days. They stop as soon as the customer replies.</p>
+          </li>
+          <li class="card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 8h6M9 12h6M9 16h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Invoice reminders</h3>
+            <p>Polite reminders 3 days before the due date, on the day, and at 7 days overdue. Never threatening, never adds fees. Disputes come straight to you.</p>
+          </li>
+          <li class="card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 16.8l-5.2 2.7 1-5.8-4.2-4.1 5.8-.8L12 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Review requests</h3>
+            <p>One polite Google review ask after each finished job or appointment. The same ask for everyone, with no incentives, in line with Google's policy.</p>
+          </li>
+          <li class="card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M19.5 14.5A7.5 7.5 0 1 1 9.5 4.5a6 6 0 0 0 10 10Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>After-hours replies</h3>
+            <p>A warm "got your message" reply to evening and weekend enquiries, asking for the details you'd need. Anything you've marked as urgent is flagged to you straight away.</p>
+          </li>
+          <li class="card">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </span>
+            <h3>Missed-call follow-up</h3>
+            <p>When a voicemail or missed-call email lands in your inbox, it sends the caller an email in your approved wording if it knows their address. If not, you get a call-back note.</p>
+          </li>
+          <li class="card card-accent">
+            <h3>Your wording, approved once</h3>
+            <p>You OK each template at setup. After that they send automatically, and anything outside them comes to you first.</p>
+            <a class="text-link" href="#control">How you stay in control <span aria-hidden="true">→</span></a>
+          </li>
+        </ul>
+        <p class="section-note">Email only, through your Gmail. Every email goes out from your own inbox, in your name.</p>
+      </div>
+    </section>
+
+    <!-- CONTROL / TRUST -->
+    <section class="section section-dark" id="control" aria-labelledby="control-title">
+      <div class="container control-inner">
+        <div class="control-copy">
+          <p class="eyebrow">You're in charge</p>
+          <h2 id="control-title">Nothing goes out in words you haven't OK'd.</h2>
+          <p>You approve each template once. After that it sends automatically, always from your own inbox. Anything that needs a real answer from you comes to you first.</p>
+          <div class="control-illo" aria-hidden="true">
+            <svg viewBox="0 0 240 150" focusable="false">
+              <rect x="16.5" y="22.5" width="150" height="104" fill="none" stroke="#E8E4DA" stroke-width="1.5"/>
+              <rect x="16.5" y="22.5" width="150" height="16" fill="#E8E4DA"/>
+              <rect x="34" y="54" width="80" height="6" fill="#E8E4DA"/>
+              <rect x="34" y="70" width="112" height="3" fill="#6E6A62"/>
+              <rect x="34" y="80" width="96" height="3" fill="#6E6A62"/>
+              <rect x="34" y="100" width="54" height="12" fill="#B33A3A"/>
+              <circle cx="190" cy="98" r="32" fill="none" stroke="#E8E4DA" stroke-width="1.5"/>
+              <path d="m174 98 11 11 21-22" fill="none" stroke="#B33A3A" stroke-width="6" stroke-linecap="square"/>
+            </svg>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li><span class="check ok" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Comes to you first:</strong> anything outside a template, plus prices, dates, complaints, disputes and urgent jobs.</span></li>
+          <li><span class="check ok" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Any customer reply</strong> stops the automatic emails and hands the conversation to you.</span></li>
+          <li><span class="check ok" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Every email has a STOP opt-out,</strong> and opt-outs are honoured straight away.</span></li>
+          <li><span class="check ok" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Pause any time,</strong> and get a daily or weekly digest of what was sent.</span></li>
+          <li><span class="check ok" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m5 10.5 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><strong>Optional first week</strong> where emails are drafted but not sent, so you can see them first.</span></li>
+          <li><span class="check no" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="m6 6 8 8M14 6l-8 8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span><span><strong>Never quotes prices, books appointments or changes amounts,</strong> and never threatens or adds fees when reminding about invoices.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2 id="how-title">Set up once, then get on with your day</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Connect</h3>
+            <p>Link your Gmail, your Google Calendar (read-only) and your Google review link.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Tell us how you work</h3>
+            <p>Your hours, what counts as urgent for you, your payment details and the tone you like.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Approve your templates</h3>
+            <p>Read and OK the wording of each email once. Nothing goes live until you have.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">4</span>
+            <h3>It sends in your voice</h3>
+            <p>Follow-ups, reminders, review requests, after-hours and missed-call replies go out automatically from your inbox.</p>
+          </li>
+          <li class="step">
+            <span class="step-num" aria-hidden="true">5</span>
+            <h3>The rest comes to you</h3>
+            <p>Real questions, prices, dates, complaints, disputes and urgent jobs land with you first.</p>
+          </li>
+        </ol>
+        <p class="section-note">Want to see it working first? Choose an optional first week where emails are drafted but not sent.</p>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section-tint" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Pricing</p>
+          <h2 id="pricing-title">Simple pricing, no lock-in</h2>
+          <p>All prices in AUD, plus GST.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card" aria-labelledby="plan-solo">
+            <h3 id="plan-solo">Solo</h3>
+            <p class="plan-for">For 1–2 people</p>
+            <p class="price"><span class="amount">$149</span><span class="per">/month + GST</span></p>
+            <p class="setup">$390 + GST one-off setup</p>
+            <ul class="plan-list">
+              <li>Quote follow-ups</li>
+              <li>Invoice reminders</li>
+              <li>Review requests</li>
+              <li>After-hours replies</li>
+              <li>Missed-call follow-up</li>
+              <li>Templates approved by you</li>
+              <li>Pause any time + daily or weekly digest</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="#book" data-booking>Book a setup call</a>
+          </article>
+          <article class="price-card price-card-featured" aria-labelledby="plan-team">
+            <h3 id="plan-team">Team</h3>
+            <p class="plan-for">For 3–5 people</p>
+            <p class="price"><span class="amount">$249</span><span class="per">/month + GST</span></p>
+            <p class="setup">$590 + GST one-off setup</p>
+            <ul class="plan-list">
+              <li>Everything in Solo, plus:</li>
+              <li>Urgent alerts to an office admin too</li>
+              <li>Monthly 20-minute review call</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#book" data-booking>Book a setup call</a>
+          </article>
+        </div>
+        <p class="refund-note"><strong>No lock-in contracts.</strong> Not happy? Get your first month back within 30 days. (The setup fee isn't refundable.)</p>
+      </div>
+    </section>
+
+    <!-- COMING LATER -->
+    <section class="section" id="coming-later" aria-labelledby="later-title">
+      <div class="container">
+        <div class="later-card">
+          <span class="later-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M8.4 3.5c.6 0 1.1.4 1.3 1l1 3c.2.5 0 1.1-.4 1.5L8.8 10.3a11 11 0 0 0 5 5l1.3-1.5c.4-.4 1-.6 1.5-.4l3 1c.6.2 1 .7 1 1.3v2.8c0 1.1-.9 2-2 2C10.4 20.5 3.5 13.6 3.5 5.5c0-1.1.9-2 2-2h2.9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <p class="later-badge">Coming later</p>
+            <h2 id="later-title">Phone calls and text messages</h2>
+            <p>Right now <span data-brand>Hidden Hand</span> is email only, through Gmail. We're planning an optional add-on for phone calls and SMS down the track. It isn't available yet, so there's nothing to set up for it today. If you'd like to hear when it's ready, just mention it on your setup call.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-tint" id="faq" aria-labelledby="faq-title">
+      <div class="container container-narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2 id="faq-title">Fair questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Is it right for my kind of business?</summary>
+            <p>If you're a small business (1–5 people) that runs on Gmail and sends quotes, invoices or appointment follow-ups, it should fit. That includes trades, cleaners, salons, clinics, consultants and plenty more. The templates are written around how you work and the tone you like.</p>
+          </details>
+          <details>
+            <summary>Does it send emails without me?</summary>
+            <p>Only emails that use a template you've approved. At setup you read and OK the wording of each one: quote follow-ups, invoice reminders, review requests, after-hours replies and missed-call follow-ups. After that they send automatically. Anything outside a template, plus prices, dates, complaints, disputes and urgent jobs, always comes to you first. You can also start with an optional first week where emails are drafted but not sent.</p>
+          </details>
+          <details>
+            <summary>Will it quote prices or book appointments for me?</summary>
+            <p>No. It never quotes prices, books appointments or jobs, or changes amounts. Anything about prices or dates comes to you first.</p>
+          </details>
+          <details>
+            <summary>Will it annoy my customers?</summary>
+            <p>It's designed not to. Quote follow-ups are friendly and capped at three, and any reply from the customer stops them. Invoice reminders never threaten or add fees. Review requests are one polite ask per finished job or appointment. Every email has a STOP opt-out, and opt-outs are honoured straight away.</p>
+          </details>
+          <details>
+            <summary>Can I pause it or see what's been sent?</summary>
+            <p>Yes. You can pause it any time, and you'll get a daily or weekly digest (your choice) of what went out. Every email also sits in your own Gmail Sent folder.</p>
+          </details>
+          <details>
+            <summary>Do I need Gmail?</summary>
+            <p>Yes. It works through Gmail, and every email is sent from your own inbox in your name. You'll also connect Google Calendar (read-only) and your Google review link.</p>
+          </details>
+          <details>
+            <summary>Does it handle phone calls or texts?</summary>
+            <p>Not yet. Today it's email only. It can follow up missed calls by email when your voicemail or missed-call notices arrive in your inbox. Phone and SMS are planned as an optional add-on later.</p>
+          </details>
+          <details>
+            <summary>Can I cancel?</summary>
+            <p>Yes. There's no lock-in. If you're not happy, you can get your first month back within 30 days (the setup fee isn't refundable).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FINAL CTA -->
+    <section class="section cta" id="book" aria-labelledby="book-title">
+      <div class="container cta-inner">
+        <h2 id="book-title">Ready to hand over the admin?</h2>
+        <p>Book a setup call. We'll connect your Gmail, set things up the way you work, and go through your templates with you.</p>
+        <!-- PLACEHOLDER: set bookingUrl and contactEmail in SITE_CONFIG (script.js) -->
+        <div class="cta-actions">
+          <a class="btn btn-light" href="#book" data-booking data-booking-label>[Booking link – placeholder]</a>
+          <p class="cta-contact">Or email <a href="#book" data-contact-email>[contact email – placeholder]</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark brand-logo" href="#top" data-brand-aria="{brand} home" aria-label="Hidden Hand home">
+        <img class="brand-lockup brand-lockup-sm" src="assets/brand/hh-lockup-on-dark.svg" width="193" height="30" alt="">
+      </a>
+      <p>© <span data-year>2026</span> <span data-brand>Hidden Hand</span> · Email only, through Gmail · Prices in AUD + GST</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
