@@ -48,7 +48,7 @@ name and is deliberately *not* tied to the config (it's in `index.html` →
 | Logo | Done: `assets/brand/` (lockup, mark, wordmark, favicons, OG image). Header shows the lockup, mark only below 768px. Sources and rebuild script: `/workspace/hiddenhand-logo/v2/` |
 | Domain | Not used on the page. Add canonical / Open Graph tags once a domain is bought |
 
-## Colours & fonts (brand system v2, matches the Hidden Hand Admin logo)
+## Colours & fonts (brand system v2, matches the Hidden Hand logo)
 
 All colours are CSS variables at the top of `styles.css`. Only three hues are used:
 bone, carbon and oxide red; everything else is a tint/shade of bone or carbon.
