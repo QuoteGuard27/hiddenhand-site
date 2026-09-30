@@ -63,8 +63,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .brand-lockup-sm { height: 30px; }
 .brand-mark-only { display: none; width: 40px; height: 40px; flex: none; }
 @media (max-width: 767px) {
-  .site-header .brand-lockup { display: none; }
-  .site-header .brand-mark-only { display: block; }
+  .site-header .brand-lockup { display: block; height: 30px; max-width: calc(100vw - 110px); }
+  .site-header .brand-mark-only { display: none; }
 }
 .site-nav { display: flex; align-items: center; gap: 28px; }
 .site-nav ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
